@@ -1,0 +1,30 @@
+{
+  "name": "pico.driver.nodeaudio",
+  "description": "AudioDriver for Node.js",
+  "version": "0.1.0",
+  "author": "Nao Yonamine <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/pico.driver/issues"
+  },
+  "dependencies": {
+    "speaker": "^0.2.6"
+  },
+  "files": [
+    "README.md",
+    "index.js",
+    "package.json"
+  ],
+  "homepage": "https://github.com/mohayonao/pico.driver/tree/master/pico.driver.nodeaudio",
+  "keywords": [
+    "audio",
+    "dsp",
+    "pico.js",
+    "timbre.js"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/pico.driver.git"
+  }
+}
