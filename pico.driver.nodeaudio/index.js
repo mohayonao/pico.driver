@@ -2,8 +2,10 @@ var Readable = require("stream").Readable;
 var Speaker = require("speaker");
 
 function PicoNodeAudioDriver() {
+  this.context = null;
   this.sampleRate = 0;
   this.bufferLength = 0;
+  this.processor = null;
 
   this._node = null;
 }
