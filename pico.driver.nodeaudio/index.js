@@ -2,15 +2,18 @@ var Readable = require("stream").Readable;
 var Speaker = require("speaker");
 
 function PicoNodeAudioDriver() {
+  this.sampleRate = 0;
+  this.bufferLength = 0;
+
   this._node = null;
 }
 
 PicoNodeAudioDriver.prototype.setup = function(opts) {
-  var bufferLength = Math.max(256, Math.min((+opts.bufferLength|0) || 1024, 16384));
   var sampleRate = +opts.sampleRate || 44100;
+  var bufferLength = Math.max(256, Math.min((+opts.bufferLength|0) || 1024, 16384));
 
-  this.bufferLength = 1 << Math.ceil(Math.log(bufferLength) / Math.log(2));
   this.sampleRate = sampleRate;
+  this.bufferLength = 1 << Math.ceil(Math.log(bufferLength) / Math.log(2));
 };
 
 PicoNodeAudioDriver.prototype.start = function() {
