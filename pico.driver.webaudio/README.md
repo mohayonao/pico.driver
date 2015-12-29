@@ -14,6 +14,7 @@ $ npm install pico.driver.webaudio
 
 #### Instance attributes
 - `processor: Processor` _(required)_
+- `context: AudioContext` _(implicit readonly)_
 - `sampleRate: number` _(implicit readonly)_
 - `bufferLength: number` _(implicit readonly)_
 
