@@ -1,14 +1,15 @@
 {
   "name": "pico.driver.audioworker",
   "description": "AudioDriver for AudioWorker",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Nao Yonamine <mohayonao@gmail.com>",
   "bugs": {
     "url": "https://github.com/mohayonao/pico.driver/issues"
   },
   "files": [
     "README.md",
-    "index.js",
+    "client.js",
+    "worker.js",
     "package.json"
   ],
   "homepage": "https://github.com/mohayonao/pico.driver/tree/master/pico.driver.webaudio",
@@ -19,7 +20,7 @@
     "timbre.js"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "client.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mohayonao/pico.driver.git"
